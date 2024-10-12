@@ -1,88 +1,13 @@
 import { Button } from "@/components/ui/button";
-import logo from "/uploads/sipahacademy-logo1.png";
-
-import {
- NavigationMenu,
- NavigationMenuContent,
- NavigationMenuItem,
- NavigationMenuLink,
- NavigationMenuList,
- NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { Input } from "@/components/ui/input";
-import { LANGUAGES } from "@/lib/constants";
 import { useTranslation } from "react-i18next";
-import {
- Select,
- SelectContent,
- SelectItem,
- SelectTrigger,
- SelectValue,
-} from "@/components/ui/select";
+import Navbar from "./components/Navbar";
 
 export const Landing = () => {
- const { i18n, t } = useTranslation();
-
- const onChangeLang = (lang_code: string) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  urlParams.set("lang", lang_code);
-  localStorage.setItem("lang", lang_code);
-  window.location.search = urlParams.toString();
- };
-
+ const { t } = useTranslation();
  return (
   <>
-   <nav className="sticky top-0 left-0 w-full px-8 py-3 bg-background border-b border-input flex items-center gap-4 justify-between">
-    <div className="flex gap-1 items-center">
-     <img src={logo} alt="profile" className="w-10 h-10 rounded-full" />
-     <div className="font-medium">
-      <h1 className="text-sm leading-[1.1rem]">
-       {t("nav.title").split(" ")[0]}
-      </h1>
-      <h1 className="text-xs">{t("nav.title").split(" ")[1]}</h1>
-     </div>
-    </div>
-
-    <NavigationMenu>
-     <NavigationMenuList className="gap-4">
-      <NavigationMenuItem>
-       <NavigationMenuTrigger>{t("nav.menu.0")}</NavigationMenuTrigger>
-
-       <NavigationMenuContent>
-        <NavigationMenuLink>Link</NavigationMenuLink>
-       </NavigationMenuContent>
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-       {/*<Link href="/docs" legacyBehavior passHref>*/}
-       <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-        {t("nav.menu.1")}
-       </NavigationMenuLink>
-       {/*</Link>*/}
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-       <Select onValueChange={onChangeLang}>
-        <SelectTrigger>
-         <SelectValue
-          placeholder={LANGUAGES.find((l) => l.code === i18n.language)?.label}
-         />
-        </SelectTrigger>
-        <SelectContent>
-         {LANGUAGES.map(({ code, label }) => (
-          <SelectItem key={code} value={code}>
-           {label}
-          </SelectItem>
-         ))}
-        </SelectContent>
-       </Select>
-      </NavigationMenuItem>
-     </NavigationMenuList>
-    </NavigationMenu>
-    <Button>{t("nav.button")}</Button>
-   </nav>
-
+   <Navbar />
    <div className="grid lg:grid-cols-2 px-8 py-24 items-center max-w-7xl mx-auto">
     <div>
      <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
@@ -117,7 +42,8 @@ export const Landing = () => {
      <div>
       <img
        src={`${import.meta.env.BASE_URL}uploads/sohoje_spoken_arbi_16x9.jpg`}
-       alt="course"
+       alt="couimport Navbar from './components/Navbar';
+rse"
        className="w-full object-cover rounded-t-lg aspect-w-16 aspect-h-9"
       />
       <div className="bg-secondary text-secondary-foreground p-4 rounded-b-lg">

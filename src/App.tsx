@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Landing } from "./components/pages/landing/Landing";
 import { useEffect } from "react";
 import i18n from "./lib/i18n";
+import { Products } from "./components/pages/landing/Products";
+import { ProductView } from "./components/pages/landing/ProductView";
 
 export default function App() {
  useEffect(() => {
@@ -20,6 +22,8 @@ export default function App() {
    <BrowserRouter basename="/sipahacademy/">
     <Routes>
      <Route path="/" element={<Landing />} />
+     <Route path="/products" element={<Products />} />
+     <Route path="/product/:id" element={<ProductView />} />
     </Routes>
    </BrowserRouter>
   </>
