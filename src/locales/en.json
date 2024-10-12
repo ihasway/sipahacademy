@@ -1,0 +1,26 @@
+{
+    "translation": {
+        "nav": {
+            "title": "Sipah Academy",
+            "menu": [
+                "Products",
+                "About Us"
+            ],
+            "button": "Login"
+        },
+        "hero": {
+            "title": "Online Courses and Practical Knowledge: The Path to True Wisdom",
+            "subtitle": "We offer engaging online courses and interactive training sessions that cater to wisdom. Join us and unlock your potential!",
+            "button": "Find your learning path",
+            "search": {
+                "placeholder": "Find your preferred course",
+                "title": "Searches",
+                "null": "You haven't searched for any course yet."
+            }
+        },
+        "courses": {
+            "title": "Our Top Courses",
+            "subtitle": "Check out our top courses and select your preferred course."
+        }
+    }
+}

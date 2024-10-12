@@ -1,9 +1,14 @@
-import { Button } from "@/components/ui/button"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Landing } from "./components/pages/landing/Landing";
 
-export default function Home() {
-  return (
-    <div>
-      <Button>Click me</Button>
-    </div>
-  )
+export default function App() {
+ return (
+  <>
+   <BrowserRouter basename="/sipahacademy/">
+    <Routes>
+     <Route path="/" element={<Landing />} />
+    </Routes>
+   </BrowserRouter>
+  </>
+ );
 }
