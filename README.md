@@ -1,1 +1,3 @@
-# sipahacademy
+# Sipah Academy
+
+Wisdom is Power!
