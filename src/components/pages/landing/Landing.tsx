@@ -25,7 +25,10 @@ export const Landing = () => {
  const { i18n, t } = useTranslation();
 
  const onChangeLang = (lang_code: string) => {
-  i18n.changeLanguage(lang_code);
+  const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set("lang", lang_code);
+  localStorage.setItem("lang", lang_code);
+  window.location.search = urlParams.toString();
  };
 
  return (
