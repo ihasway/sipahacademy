@@ -30,16 +30,16 @@ const Navbar = () => {
  };
 
  return (
-  <>
+  <div>
    <nav className="sticky top-0 left-0 w-full px-8 py-3 bg-background border-b border-input flex items-center gap-4 justify-between">
     <Link to="/">
      <div className="flex gap-1 items-center">
       <img src={logo} alt="profile" className="w-10 h-10 rounded-full" />
       <div className="font-medium">
        <h1 className="text-sm leading-[1.1rem]">
-        {t("nav.title").split(" ")[0]}
+        {t("landing.nav.title").split(" ")[0]}
        </h1>
-       <h1 className="text-xs">{t("nav.title").split(" ")[1]}</h1>
+       <h1 className="text-xs">{t("landing.nav.title").split(" ")[1]}</h1>
       </div>
      </div>
     </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
       <NavigationMenuItem>
        <Link to="/products">
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-         {t("nav.menu.0")}
+         {t("landing.nav.menu.0")}
         </NavigationMenuLink>
        </Link>
       </NavigationMenuItem>
@@ -57,7 +57,7 @@ const Navbar = () => {
       <NavigationMenuItem>
        <Link to="/about-us">
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-         {t("nav.menu.1")}
+         {t("landing.nav.menu.1")}
         </NavigationMenuLink>
        </Link>
       </NavigationMenuItem>
@@ -80,9 +80,9 @@ const Navbar = () => {
       </NavigationMenuItem>
      </NavigationMenuList>
     </NavigationMenu>
-    <Button>{t("nav.button")}</Button>
+    <Button>{t("landing.nav.button")}</Button>
    </nav>
-  </>
+  </div>
  );
 };
 
