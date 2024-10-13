@@ -11,6 +11,12 @@ export const courses = [
    lang: "Bengali",
    price: "3000",
    reducedPrice: "2000",
+   shortInfo: {
+    duration: "14 hours",
+    videos: "35",
+    notes: "33",
+    flexibility: "Lifetime access",
+   },
   },
   bn: {
    title: "সহজ কথিত আরবি",
@@ -20,6 +26,12 @@ export const courses = [
    lang: "বাংলা",
    price: "৩০০০",
    reducedPrice: "২০০০",
+   shortInfo: {
+    duration: "১৪ ঘণ্টা",
+    videos: "৩৫",
+    notes: "৩৩",
+    flexibility: "আজীবন অ্যাক্সেস",
+   },
   },
   ar: {
    title: "العربية المنطوقة بسهولة",
@@ -29,6 +41,12 @@ export const courses = [
    lang: "البنغالية",
    price: "٣ ٠ ٠ ٠",
    reducedPrice: "٢ ٠ ٠ ٠",
+   shortInfo: {
+    duration: "١٤ ساعة",
+    videos: "٣٥",
+    notes: "٣٣",
+    flexibility: "الوصول مدى الحياة",
+   },
   },
  },
 ];

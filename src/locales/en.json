@@ -38,7 +38,13 @@
                 "hero": {
                     "instructor": "Instructor",
                     "enroll": "Enroll Now"
-                }
+                },
+                "shortInfo": [
+                    "Duration",
+                    "Lectures",
+                    "Notes",
+                    "Flexibility"
+                ]
             }
         }
     }
