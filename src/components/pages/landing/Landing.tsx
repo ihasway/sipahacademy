@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
-import Navbar from "./components/Navbar";
 
 export const Landing = () => {
  const { t } = useTranslation();
@@ -12,7 +11,6 @@ export const Landing = () => {
     <title>{t("landing.main.meta.title")}</title>
     <meta name="description" content={t("landing.main.meta.description")} />
   </Helmet>
-   <Navbar />
    <div className="grid lg:grid-cols-2 px-8 py-24 items-center max-w-7xl mx-auto">
     <div>
      <h1 className="text-4xl font-bold">{t("landing.main.hero.title")}</h1>

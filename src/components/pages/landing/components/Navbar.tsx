@@ -30,7 +30,7 @@ const Navbar = () => {
  };
 
  return (
-  <div>
+  <>
    <nav className="sticky top-0 left-0 w-full px-8 py-3 bg-background border-b border-input flex items-center gap-4 justify-between">
     <Link to="/">
      <div className="flex gap-1 items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
     </NavigationMenu>
     <Button>{t("landing.nav.button")}</Button>
    </nav>
-  </div>
+  </>
  );
 };
 

@@ -54,6 +54,8 @@ export default {
    },
    fontFamily: {
     sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+    bangla: ["Tiro Bangla", ...defaultTheme.fontFamily.sans],
+    arabic: ["Noto Kufi Arabic", ...defaultTheme.fontFamily.sans],
    },
   },
  },

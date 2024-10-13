@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import i18n from "./lib/i18n";
 import { Products } from "./components/pages/landing/Products";
 import { ProductView } from "./components/pages/landing/ProductView";
+import { Layout } from "./components/pages/landing/components/Layout";
 
 export default function App() {
  useEffect(() => {
@@ -21,9 +22,30 @@ export default function App() {
   <>
    <BrowserRouter basename="/sipahacademy/">
     <Routes>
-     <Route path="/" element={<Landing />} />
-     <Route path="/products" element={<Products />} />
-     <Route path="/product/:id" element={<ProductView />} />
+     <Route
+      path="/"
+      element={
+       <Layout>
+        <Landing />
+       </Layout>
+      }
+     />
+     <Route
+      path="/products"
+      element={
+       <Layout>
+        <Products />
+       </Layout>
+      }
+     />
+     <Route
+      path="/product/:id"
+      element={
+       <Layout>
+        <ProductView />
+       </Layout>
+      }
+     />
     </Routes>
    </BrowserRouter>
   </>
