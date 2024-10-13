@@ -33,6 +33,12 @@
                 "meta": {
                     "title": "Our Products | Sipah Academy"
                 }
+            },
+            "productView": {
+                "hero": {
+                    "instructor": "Instructor",
+                    "enroll": "Enroll Now"
+                }
             }
         }
     }

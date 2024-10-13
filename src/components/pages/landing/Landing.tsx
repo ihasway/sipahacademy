@@ -4,38 +4,10 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import { langType } from "@/lib/constants";
 import { Link } from "react-router-dom";
+import { courses } from "@/lib/data";
 
 export const Landing = () => {
  const { t, i18n } = useTranslation();
-
- const courses = [
-  {
-   cover: "sohoje_spoken_arbi_16x9.jpg",
-   link: "easy-spoken-arabic",
-   type: "course",
-   en: {
-    title: "Easy Spoken Arabic",
-    instructor: "Mahade Hasan",
-    lang: "Bengali",
-    price: "3000",
-    reducedPrice: "2000",
-   },
-   bn: {
-    title: "সহজ কথিত আরবি",
-    instructor: "মাহাদি হাসান",
-    lang: "বাংলা",
-    price: "৩০০০",
-    reducedPrice: "২০০০",
-   },
-   ar: {
-    title: "العربية المنطوقة بسهولة",
-    instructor: "مهاد حسن",
-    lang: "البنغالية",
-    price: "٣ ٠ ٠ ٠",
-    reducedPrice: "٢ ٠ ٠ ٠",
-   },
-  },
- ];
 
  return (
   <>
@@ -87,7 +59,8 @@ export const Landing = () => {
        <div className="!max-w-[300px] cursor-pointer hover:transform hover:scale-105 transition-transform">
         <img
          src={`${import.meta.env.BASE_URL}uploads/${course.cover}`}
-         alt="course"
+         alt="couimport { courses } from './../../../lib/data';
+rse"
          className="w-full object-cover rounded-t-lg aspect-w-16 aspect-h-9"
         />
         <div className="bg-secondary text-secondary-foreground p-3 rounded-b-lg">
@@ -103,7 +76,7 @@ export const Landing = () => {
           </span>
           <div
            className={
-            "price mt-2 flex gap-2 items-center" +
+            "mt-2 flex gap-2 items-center" +
             (i18n.language === "ar" ? " flex-row-reverse tracking-tighter" : "")
            }
           >

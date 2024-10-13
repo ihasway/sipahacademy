@@ -33,6 +33,12 @@
                 "meta": {
                     "title": "منتجاتنا | أكاديمية سيباه"
                 }
+            },
+            "productView": {
+                "hero": {
+                    "instructor": "المدرب",
+                    "enroll": "سجل الآن"
+                }
             }
         }
     }
